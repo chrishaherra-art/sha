@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Background: pastel gradient + optional image overlay */
+    body {
+      height: 100vh;
+      font-family: "Comic Sans MS", "Poppins", sans-serif;
+      background: linear-gradient(135deg, #ffe6f0, #d5f3ff);
+      background-image: url('bg.jpg'); /* Optional: replace with your image */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #444;
+    }
+
+    /* Overlay for pastel softness */
+    .overlay {
+      background-color: rgba(255, 255, 255, 0.6);
+      padding: 50px 60px;
+      border-radius: 30px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(6px);
+      max-width: 500px;
+      animation: fadeIn 1.5s ease;
+    }
+
+    /* Cute ribbon */
+    .ribbon {
+      background: #ffb6c1;
+      color: white;
+      font-size: 2rem;
+      font-weight: bold;
+      padding: 12px 40px;
+      border-radius: 20px;
+      position: relative;
+      display: inline-block;
+      box-shadow: 0 4px 10px rgba(255, 182, 193, 0.5);
+      margin-bottom: 20px;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    /* Ribbon tails */
+    .ribbon::before,
+    .ribbon::after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      border-top: 10px solid #ff99aa;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+    }
+
+    .ribbon::before { left: 0; }
+    .ribbon::after { right: 0; }
+
+    /* Paragraph */
+    p {
+      font-size: 1.1rem;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    /* Button */
+    .btn {
+      background-color: #ffd6e0;
+      color: #444;
+      padding: 10px 25px;
+      border: none;
+      border-radius: 20px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.3s;
+      box-shadow: 0 4px 10px rgba(255, 182, 193, 0.4);
+    }
+
+    .btn:hover {
+      background-color: #ffb6c1;
+      color: white;
+      transform: scale(1.05);
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+    </style>
+    
+</head>
+<body>
+     <div class="overlay">
+    <div class="ribbon">Hi, I'm Chrisha Herra</div>
+    <p>Welcome to my cute little portfolio site!</p>
+    <button class="btn">See My Projects</button>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me | Chrisha Herra</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(135deg, #fff5f8, #e8f0ff);
+      color: #333;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: #ffb6c1;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      font-size: 1.1em;
+      margin-top: 8px;
+      opacity: 0.95;
+    }
+
+    nav {
+      background: white;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #ff5c8d;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #ff80a6;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .about {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 40px;
+      margin-bottom: 60px;
+    }
+
+    .about img {
+      width: 280px;
+      height: 280px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 6px solid #ffb6c1;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    }
+
+    .about-text {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .about-text h2 {
+      color: #ff5c8d;
+      margin-bottom: 15px;
+      font-size: 1.8em;
+    }
+
+    .about-text p {
+      line-height: 1.8;
+      font-size: 1em;
+      color: #555;
+    }
+
+
+
+    .contact {
+      background: #fff0f5;
+      text-align: center;
+      padding: 60px 20px;
+      border-top: 2px solid #ffd6e1;
+    }
+
+    .contact h2 {
+      color: #ff5c8d;
+      margin-bottom: 20px;
+    }
+
+    .contact p {
+      color: #555;
+      margin-bottom: 25px;
+      font-size: 1em;
+    }
+
+    .contact a {
+      display: inline-block;
+      text-decoration: none;
+      background: #ff5c8d;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 8px;
+      margin: 5px;
+      transition: 0.3s;
+      font-size: 0.95em;
+    }
+
+    .contact a:hover {
+      background: #ff80a6;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.85em;
+      color: #888;
+      background: white;
+      border-top: 1px solid #eee;
+    }
+
+    @media (max-width: 800px) {
+      .about {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .about img {
+        width: 220px;
+        height: 220px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Chrisha Herra</h1>
+    <p>ICT Information Communication technology |  1st year highschool</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about" class="about">
+    <img src="c:\Users\Deped\OneDrive\Messenger_creation_BEE04694-4D34-46A4-8BA0-651839C9F9DF.jpeg" alt="Chrisha's Photo">
+    <div class="about-text">
+      <h2>About Me</h2>
+      <p>
+        Hi! I’m Chrisha Herra, a student with big dreams and a creative heart.
+        My goal is to become a successful businesswoman someday — someone who builds meaningful ideas and inspires others to follow their passion.
+        I love learning new things, exploring opportunities, and finding ways to grow both personally and professionally.
+      </p>
+    </div>
+  </section>
+
+
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>If you’d like to connect or collaborate, feel free to message me!</p>
+    <a href="mailto:chrishaherra@gmail.com">Email Me</a>
+    <a href="https://github.com/chrisha" target="_blank">GitHub</a>
+    <a href="https://linkedin.com/in/chrisha" target="_blank">LinkedIn</a>
+  </section>
+
+  <footer>
+    © 2025 Chrisha Herra | Student Portfolio Website
+  </footer>
+
+</body>
+</html>
